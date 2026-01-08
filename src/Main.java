@@ -103,9 +103,9 @@ public class Main {
 //         TreeMap
 //         HashMap
 
-        Map<Integer , String > map = new HashMap<>();
-        map.put(1 , "Ali");
-        map.put(2 , "Vali");
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "Ali");
+        map.put(2, "Vali");
 
         System.out.println(map.get(1));
 
@@ -113,21 +113,40 @@ public class Main {
 //        TreeMap (tartibli)
 
 
-        Map<Integer , String> maps = new TreeMap<>();
+        Map<Integer, String> maps = new TreeMap<>();
 
 //        9️⃣ Iterator — aylanish (loop)
 //
 //        Collection’ni aylanib chiqish uchun.
 
         Iterator<String> it = list.iterator();
-        while (it.hasNext()){
+        while (it.hasNext()) {
             System.out.println(it.next());
         }
 
 //        Yoki oddiy:
 
-        for (String s : list){
+        for (String s : list) {
             System.out.println(s);
         }
+
+//        Masala
+
+//        1-masala
+
+        List<String> ism = new ArrayList<>();
+        ism.add("Ali");
+        ism.add("Bali");
+        ism.add("Qodir");
+        ism.add("Bobur");
+        ism.add("Umar");
+
+        for (String s : ism){
+            System.out.println(s);
+        }
+        System.out.println("Ismalr size : " + ism.size());
+
+
+
     }
 }
